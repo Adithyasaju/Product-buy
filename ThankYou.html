@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZR2DVDERZF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZR2DVDERZF');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You For Your Purchase!</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center py-10 px-4">
+
+    <div class="bg-white rounded-xl shadow-lg p-8 md:p-12 text-center max-w-2xl w-full">
+        <!-- Success Icon (SVG for scalability and styling) -->
+        <div class="mb-8">
+            <svg class="mx-auto w-24 h-24 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">Thank You For Your Purchase!</h1>
+        <p class="text-lg md:text-xl text-gray-700 mb-8">
+            Your order has been successfully placed and will be processed shortly.
+            A confirmation email with your order details has been sent to your inbox.
+        </p>
+
+        <!-- Order Details (Optional, you can dynamically populate this) -->
+        <div class="bg-gray-50 rounded-lg p-6 mb-8 border border-gray-200">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Order Summary:</h3>
+            <ul class="text-gray-700 text-left space-y-2">
+                <li><span class="font-medium">Order ID:</span> <span id="orderId">#ABC123456789</span></li>
+                <li><span class="font-medium">Total Amount:</span> <span id="totalAmount">$449.98</span></li>
+                <li><span class="font-medium">Expected Delivery:</span> <span id="deliveryDate">5-7 business days</span></li>
+            </ul>
+        </div>
+
+        <!-- Call to Action Buttons -->
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="index.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full text-lg transition-colors duration-300 transform hover:scale-105 shadow-md">
+                Continue Shopping
+            </a>
+            <a href="account.html" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-full text-lg transition-colors duration-300 transform hover:scale-105 shadow-md">
+                View Order History
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
